@@ -1,15 +1,17 @@
-# Projeto de Autenticação com Keycloak
+# ⚙️ Projeto de Autenticação com Keycloak 
 
-Este projeto utiliza o **Keycloak** como provedor de identidade e gerenciador de autenticação, integrando usuários, clientes e roles com suporte a *Service Accounts*.
+Este projeto utiliza o **Keycloak** como provedor de identidade e gerenciador de autenticação, integrando usuários, clientes e roles com suporte a *Service Accounts* rodando em um microserviço com **Quarkus**.
 
 ## 📂 Upload do Realm
 
 A pasta `upload-realm` contém o JSON de configuração do **realm `auth-keycloak-realm`**, que pode ser importado diretamente no Keycloak. Esse arquivo define:
 
-- O cliente `auth-keycloak`
-- A role `AUTH-KEYCLOAK` associada ao cliente
-- O usuário `teste` com a role atribuída via *client role*
-- Outras configurações úteis (redirect URIs, protocolos, etc.)
+- 🔑 O cliente `auth-keycloak`
+- 🛡️ A role `AUTH-KEYCLOAK` associada ao cliente
+- 👤 O usuário `teste` com a role atribuída via *client role*
+- ⚙️ Outras configurações úteis (redirect URIs, protocolos, etc.)
+
+<br/>
 
 ### 🔁 Como importar
 
@@ -22,26 +24,23 @@ Você pode importar o JSON manualmente via interface do Keycloak:
 
 Ou via terminal (container Docker):
 
+```bash
 docker cp upload-realm/realm-export.json <nome-do-container>:/opt/keycloak/data/import
 docker exec -it <nome-do-container> /opt/keycloak/bin/kc.sh import --file=/opt/keycloak/data/import/realm-export.json --override
 
 🧪 Tecnologias Utilizadas
-Java 21
-Keycloak 21.1.1 – Gerenciador de autenticação e autorização
-
-Quarkus 2.13.7.Final – Framework Java leve e nativo
-
-Docker – Containerização dos ambientes (Keycloak, DB, etc.)
-
-OpenID Connect (OIDC) – Protocolo de autenticação baseado em OAuth2
-
-Service Account Roles – Uso de credenciais do cliente para autenticação automática entre sistemas
-
-PostgreSQL / H2 – Suporte a bancos de dados relacionais
+Tecnologia	Versão	:rocket:
+21.1.1	Gerenciador de autenticação e autorização
+2.13.7.Final	Framework Java Leve e Nativo
+21	Linguagem base
+Latest	Containerização dos ambientes
+15	Persistência do Keycloak
+-	Protocolo de Autenticação
 
 👤 Usuário de Teste
 Usuário criado no realm para testes rápidos com roles atribuídas:
 
-Usuário: teste 
-Senha: testpass
-Role: AUTH-KEYCLOAK (vinculada ao client auth-keycloak)
+Usuário	Senha	Role
+teste	testpass	AUTH-KEYCLOAK
+
+<p align="center"> <img src="https://www.keycloak.org/resources/images/keycloak_logo_200px.svg" width="120px"/> <img src="https://www.docker.com/wp-content/uploads/2022/03/Docker-Logo-White-RGB_Vertical.png" width="120px"/> <img src="https://quarkus.io/assets/images/logos/quarkus_icon_rgb_300px_reverse.png" width="120px"/> </p> ```
