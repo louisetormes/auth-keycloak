@@ -44,4 +44,4 @@ Usuário criado no realm para testes rápidos com roles atribuídas:
 Usuário	Senha	Role
 teste	testpass	AUTH-KEYCLOAK
 
-<p align="center"> <img src="https://www.keycloak.org/resources/images/keycloak_logo_200px.svg" width="120px"/> <img src="https://www.docker.com/wp-content/uploads/2022/03/Docker-Logo-White-RGB_Vertical.png" width="120px"/> <img src="https://quarkus.io/assets/images/logos/quarkus_icon_rgb_300px_reverse.png" width="120px"/> </p>
+<p align="center"> <img src="https://blog.desdelinux.net/wp-content/uploads/2019/08/KeyCloak-1.png.webp" width="120px"/> <img src="https://www.docker.com/wp-content/uploads/2022/03/Docker-Logo-White-RGB_Vertical.png" width="120px"/> <img src="[https://quarkus.io/assets/images/logos/quarkus_icon_rgb_300px_reverse.png](https://media.licdn.com/dms/image/v2/D4D12AQE5q_oUHnksFw/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1684257349831?e=2147483647&v=beta&t=KSla1oVS1YEwA-LRmJmYeNhCr3J90kF-nlgnrTqOrXI)" width="120px"/> </p>
