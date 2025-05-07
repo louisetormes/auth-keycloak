@@ -45,5 +45,3 @@ Usuário criado no realm para testes rápidos com roles atribuídas:
 Usuário: teste 
 Senha: testpass
 Role: AUTH-KEYCLOAK (vinculada ao client auth-keycloak)
-
-```bash
