@@ -22,7 +22,6 @@ Você pode importar o JSON manualmente via interface do Keycloak:
 
 Ou via terminal (container Docker):
 
-```bash
 docker cp upload-realm/realm-export.json <nome-do-container>:/opt/keycloak/data/import
 docker exec -it <nome-do-container> /opt/keycloak/bin/kc.sh import --file=/opt/keycloak/data/import/realm-export.json --override
 
@@ -43,8 +42,8 @@ PostgreSQL / H2 – Suporte a bancos de dados relacionais
 👤 Usuário de Teste
 Usuário criado no realm para testes rápidos com roles atribuídas:
 
-Usuário: teste
-
+Usuário: teste 
 Senha: testpass
-
 Role: AUTH-KEYCLOAK (vinculada ao client auth-keycloak)
+
+```bash
