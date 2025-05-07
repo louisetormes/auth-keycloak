@@ -27,6 +27,7 @@ Ou via terminal (container Docker):
 ```bash
 docker cp upload-realm/realm-export.json <nome-do-container>:/opt/keycloak/data/import
 docker exec -it <nome-do-container> /opt/keycloak/bin/kc.sh import --file=/opt/keycloak/data/import/realm-export.json --override
+```
 
 🧪 Tecnologias Utilizadas
 Tecnologia	Versão	:rocket:
